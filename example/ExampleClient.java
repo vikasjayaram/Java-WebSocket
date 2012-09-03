@@ -34,6 +34,7 @@ public class ExampleClient extends WebSocketClient {
 
 	public static void main( String[] args ) throws URISyntaxException {
 		ExampleClient c = new ExampleClient( new URI( "ws://localhost:8887" ), new Draft_10() );
+//		ExampleCLient c = new ExampleClient( new URI("ws://localhost:8887"), new Draft_17("subprotocol", "origin"));
 		c.connect();
 	}
 
